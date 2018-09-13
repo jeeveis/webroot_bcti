@@ -50,8 +50,6 @@ def print_url_info(phishtank_response):
 
 def main():
 
-    """This is the main code"""
-
     parser = argparse.ArgumentParser('Domain validation and url/getinfo')
     parser.add_argument("-u", "--url", type=str, help='Enter the URL')
     parser.add_argument("-p", "--path", type=str, help='Enter the path to file')
@@ -59,14 +57,10 @@ def main():
     user_input_url = args.url
     user_input_path = args.path
 
-    if user_input_url is None:
-        
+    if user_input_url is None:   
         urlfile_path(user_input_path)
-
-    else:
-        
+    else:   
         check_phishtank(user_input_url)
-        
 
 
 if __name__ == '__main__':
