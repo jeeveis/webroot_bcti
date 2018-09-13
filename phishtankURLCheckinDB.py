@@ -19,8 +19,7 @@ def check_phishtank(url):
     post_data = {
         'url': base64.b64encode(url.encode("utf-8")),
         'format': 'json',
-        'app_key': '82923cec5229162496074b218fbe6c8bc2cf95dd16f44b52f\
-        6065f64b6816d03'
+        'app_key': 'ADD-YOUR-API-KEY'
     }
     headers = {
         'cache-control': "no-cache"
